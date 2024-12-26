@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChessPerformer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jeu d'Echecs</h1>
+      <div class="game-info">
+        <div class="turn-indicator">
+          C'est le tour de : <span class="current-player">Blanc</span>
+        </div>
+        <div class="move-counter">
+          Coups joué <span class="white-moves">0</span> (Blanc) |
+          <span class="black-moves">0</span> (Noir)
+        </div>
+        <button id="restart-btn">Recommencer le jeu</button>
+      </div>
+      <div id="chess-board"></div>
+      <!-- #game-status : Zone pour afficher des messages concernant l'état du jeu (début, fin, échec, etc.). -->
+      <div id="game-status"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
